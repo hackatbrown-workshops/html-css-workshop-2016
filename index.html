@@ -9,6 +9,15 @@
 		<!-- The various forms of meta elements provide metadata such as the character encoding of the file -->
 		<meta charset="utf-8">
 
+		<!--
+			"link" elements tell the browser about related resources. The "rel" attribute indicates what kind of resource it is.
+
+			"stylesheet" is used for CSS styles, "icon" is used for favicons, and so on.
+
+			Like with "a", the "href" attribute is the URL being linked to.
+		-->
+		<link rel="stylesheet" href="style.css">
+
 		<!-- The page title is what shows up in tabs and bookmarks -->
 		<title>R2-D2</title>
 	</head>
@@ -24,10 +33,10 @@
 			is viewed with a screen reader, the "alt" text will be displayed. The "title" text is displayed when you
 			hover over the image with your mouse.
 		-->
-		<img src="https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png" alt="R2-D2" title="R2-D2" />
+		<img id="profile" src="https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png" alt="R2-D2" title="R2-D2" />
 
 		<!-- "p" elements represent paragraphs of text -->
-		<p>Hi! I'm R2-D2, an astromech droid from Star Wars.</p>
+		<p class="intro">Hi! I'm R2-D2, an astromech droid from Star Wars.</p>
 
 		<p>I've met a lot of people over 7 movies:</p>
 
