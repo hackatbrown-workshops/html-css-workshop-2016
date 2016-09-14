@@ -2,7 +2,7 @@ body {
 	font-family: Circular, Arial, Helvetica, sans-serif;
 }
 
-#profile {
+.profile {
 	padding: 20px;
 	background-color: rgb(58, 195, 216);
 }
@@ -14,5 +14,20 @@ body {
 
 ul > li {
 	font-weight: bold;
-	color: #292348;
+}
+
+.title {
+	color: white;
+	background-color: #292348;
+}
+
+.container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-around;
+}
+
+.container > div {
+	padding: 20px;
 }

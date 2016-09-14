@@ -25,40 +25,50 @@
 	<body>
 	<!-- ^^ The "body" element contains the part of the page that gets displayed on your screen -->
 
-		<!-- There are 6 levels of heading, from h1 (the biggest) to h6 (the smallest) -->
-		<h1>R2-D2</h1>
+		<div class="container">
+			<div>
+				<!-- There are 6 levels of heading, from h1 (the biggest) to h6 (the smallest) -->
+				<h1 class="title">R2-D2</h1>
 
-		<!--
-			The "src" attribute gives the URL of the image to display. When the image can't be loaded or when the page
-			is viewed with a screen reader, the "alt" text will be displayed. The "title" text is displayed when you
-			hover over the image with your mouse.
-		-->
-		<img id="profile" src="https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png" alt="R2-D2" title="R2-D2" />
+				<!-- "p" elements represent paragraphs of text -->
+				<p class="intro">Hi! I'm R2-D2, an astromech droid from Star Wars.</p>
 
-		<!-- "p" elements represent paragraphs of text -->
-		<p class="intro">Hi! I'm R2-D2, an astromech droid from Star Wars.</p>
+				<div class="people">
+					<p>I've met a lot of people over 7 movies:</p>
 
-		<p>I've met a lot of people over 7 movies:</p>
+					<!-- "ul" is an unordered list, usually with bullet points. You can also create ordered lists with numbers using "ol" -->
+					<ul>
+						<!-- Each entry in the list goes in a "li" (list item) element -->
+						<li>
+							<!-- You can put whatever HTML you want here! -->
+							Padmé Amidala
+						</li>
+						<li>Obi-Wan Kenobi</li>
+						<li>Leia Organa</li>
+						<li>Luke Skywalker</li>
+						<li>Han Solo</li>
+					</ul>
+				</div>
 
-		<!-- "ul" is an unordered list, usually with bullet points. You can also create ordered lists with numbers using "ol" -->
-		<ul>
-			<!-- Each entry in the list goes in a "li" (list item) element -->
-			<li>
-				<!-- You can put whatever HTML you want here! -->
-				Padmé Amidala
-			</li>
-			<li>Obi-Wan Kenobi</li>
-			<li>Leia Organa</li>
-			<li>Luke Skywalker</li>
-			<li>Han Solo</li>
-		</ul>
+				<div class="social">
+					<p>Follow me online!</p>
+					<ol>
+						<!-- "a" (anchor) elements are links. The "href" attribute specifies the URL to link to -->
+						<li><a href="https://www.facebook.com/hackatbrown">Facebook</a></li>
+						<li><a href="https://twitter.com/hackatbrown">Twitter</a></li>
+					</ol>
+				</div>
+			</div>
 
-		<p>Follow me online!</p>
-		<ol>
-			<!-- "a" (anchor) elements are links. The "href" attribute specifies the URL to link to -->
-			<li><a href="https://www.facebook.com/hackatbrown">Facebook</a></li>
-			<li><a href="https://twitter.com/hackatbrown">Twitter</a></li>
-		</ol>
+			<div>
+				<!--
+					The "src" attribute gives the URL of the image to display. When the image can't be loaded or when the page
+					is viewed with a screen reader, the "alt" text will be displayed. The "title" text is displayed when you
+					hover over the image with your mouse.
+				-->
+				<img class="profile" src="https://upload.wikimedia.org/wikipedia/en/3/39/R2-D2_Droid.png" alt="R2-D2" title="R2-D2" />
+			</div>
+		</div>
 	</body>
 
 </html>
